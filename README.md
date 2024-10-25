@@ -131,6 +131,13 @@ This project uses **Swagger** to generate API documentation automatically. Swagg
     - Service Workers
     - Redux Persist
 
+  Environment Variables
+  
+    - Implementing environment variables in the project can help manage configuration settings more effectively.
+      This approach allows for better separation of concerns, as well as easier and more secure configuration management.
+    - For production environments, sensitive information and configuration values can be managed using GitHub Secrets
+      or other CI/CD tools, ensuring that they are not exposed in the codebase.
+
 ### Known Issues
 
 - Swagger UI is not working properly. The plugin fastify-swagger-ui seems to be looking for static file logo.svg in the root of the project. I can't find right now in the config how to remove this behavior.
